@@ -9,11 +9,11 @@ a{text-decoration:none}
 .page img{width:100%;height:auto;display:block}
 /* áreas clicáveis invisíveis sobre a imagem (posição em % da imagem) */
 .hit{position:absolute;display:block}
-.ig{left:4.9%;top:2%;width:51.7%;height:20.8%;border-radius:24px}
-.wa{left:20.8%;top:82.7%;width:59.4%;height:7.3%;border-radius:999px}
-.ag{left:17.6%;top:90.8%;width:66.4%;height:5.5%;border-radius:999px}
+.ig{left:4.9%;top:9.49%;width:51.7%;height:17.55%;border-radius:24px}
+.wa{left:20.8%;top:77.6%;width:59.4%;height:6.16%;border-radius:999px}
+.ag{left:17.6%;top:84.43%;width:66.4%;height:4.64%;border-radius:999px}
 /* celulares (tela mais alta que o flyer): prolonga as bordas de cima e de baixo do próprio flyer para preencher a tela */
-@media (max-aspect-ratio:2/3){
+@media (max-aspect-ratio:9/16){
  body{overflow:hidden}
  .page::before,.page::after{content:"";position:absolute;left:0;right:0;height:100vh;background:url(../assets/img/flyer.jpg) no-repeat;background-size:100% 3000%;transform:scaleY(-1);filter:blur(14px) brightness(.85);pointer-events:none}
  .page::before{bottom:100%;background-position:top;-webkit-mask-image:linear-gradient(to bottom,#000 0,transparent 55%);mask-image:linear-gradient(to bottom,#000 0,transparent 55%)}
